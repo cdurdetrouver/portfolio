@@ -1,25 +1,19 @@
-<!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script>
+	import HomeHero from "$lib/components/Home/HomeHero.svelte";
+</script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-10 text-center flex flex-col items-center">
-		<h1 class="h1 glitch uppercase" data-text="En construction">En construction</h1>
-	</div>
-</div>
+<header id="hero">
+	<div class="section-container"><HomeHero /></div>
+</header>
 
-<style lang="scss">
+<img class="w-[50vw]" src="yugo.gif" alt="test">
+<img class="w-[5vw]" src="stardew.gif" alt="test">
+<img class="w-[15vw]" src="saitama.gif" alt="test">
+<img class="w-[20vw] rounded-xl" src="outerwilds.jpg" alt="test">
+<img src="https://media0.giphy.com/media/YRMb6dd7zprS00JdGZ/giphy.gif?cid=ecf05e47pp9oy2ivxoy3aif9mvewoex6jc5ywnem9njblkob&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="dev"/>
 
-	.glitch {
-		position: relative;
-		color: white;
-		mix-blend-mode: lighten;
-		text-shadow: -2.5px -2.5px rgba(blue,0.7);
-
-		&:before {
-			content: attr(data-text);
-			position: absolute;
-			top: 0;
-			width: 100%;
-			text-shadow: 2.5px 2.5px rgba(red,0.7);
-		}
+<style type="postcss">
+	.section-container {
+		@apply w-full max-w-7xl mx-auto p-4 py-16 md:py-24;
 	}
 </style>
