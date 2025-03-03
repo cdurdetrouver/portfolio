@@ -4,13 +4,13 @@
 <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-10 items-center justify-center">
 	<div class="flex flex-col items-center xl:items-start text-center xl:text-left space-y-4 mt-40">
 		<h1 class="h1 !text-5xl md:!text-6xl max-w-[600px]">
-			Hey! I’m <span class="glitch-text uppercase" data-text="Gabriel">Gabriel</span> and I'm a software engineer.
+			Hey! Je suis <span class="glitch-text uppercase" data-text="Gabriel">Gabriel</span> et je suis étudiant en computer science.
 		</h1>
 		<p class="!text-xl max-w-[475px]">
-			I love working on the web and making sure it continues to be a place for everyone and our creative, personal, and weird passions.
+			Passionné par le développement logiciel et les technologies web, je suis actuellement à la recherche d'une alternance / stage en Software Engineering. Curieux et toujours en quête de nouveaux défis, j'aime concevoir des applications performantes, ergonomiques et bien architecturées.
 		</p>
 		<div class="flex gap-4">
-			<a class="btn variant-filled text-xl" href="#test" rel="noreferrer">
+			<a class="btn variant-filled text-xl" href="#about" rel="noreferrer">
 				Learn more about me
 			</a>
 		</div>
@@ -20,14 +20,15 @@
 			<div class="absolute z-[1] left-[23%]">
 				<div class="glitch-image">
 					<img src="gbazart.jpg" alt="profile picture" class="rounded-3xl w-[28vw] " aria-hidden="true" />
-					<img src="little-logo.png" alt="logo" class="rounded-3xl w-[28vw] overlay-logo" aria-hidden="true" />
+					<img src="little-logo.png" alt="logo" class="block xl:hidden rounded-3xl w-[28vw] overlay-logo" aria-hidden="true" />
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
-<style type="scss">
+<style lang="postcss">
+
 	.glitch-text {
 		position: relative;
 		color: white;
@@ -50,7 +51,6 @@
 
 	.overlay-logo {
 		position: absolute;
-		display: none;
 		top: 0;
 		left: 0;
 		width: 100%;

@@ -26,6 +26,10 @@
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
 </script>
 
+<svelte:head>
+  <title>Portfolio Gabriel Bazart</title>
+</svelte:head>
+
 <!-- App Shell -->
 <AppShell>
 	<svelte:fragment slot="header">
@@ -35,14 +39,17 @@
 				<Logo />
 			</svelte:fragment>
 			<svelte:fragment slot="trail">
-				<a
-					class="btn btn-sm variant-ghost-surface"
-					href="https://github.com/cdurdetrouver"
-					target="_blank"
-					rel="noreferrer"
-				>
-					GitHub
-				</a>
+				<div class="relative hidden lg:block">
+					<a class="btn hover:variant-soft-primary cursor-pointer" href="/freelance">
+						<span class="hidden select-none md:inline-block">Freelance</span>
+					</a>
+				</div>
+		
+				<div>
+					<a class="btn hover:variant-soft-primary cursor-pointer" href="/contact">
+						<span class="hidden select-none md:inline-block">Contact</span>
+					</a>
+				</div>
 			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
