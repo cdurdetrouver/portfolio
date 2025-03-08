@@ -1,6 +1,7 @@
 <script>
 	import Hero from "$lib/components/Home/Hero.svelte";
 	import Freelance from "$lib/components/Home/Freelance.svelte";
+	import Project from "$lib/components/Home/Project.svelte";
 	import Stack from "$lib/components/Home/Stack.svelte";
 </script>
 
@@ -10,14 +11,15 @@
 
 <section id="freelance">
 	<div class="section-container"><Freelance/></div>
+	<div class="h-[10vh]"></div>
 </section>
 
 <section id="project" class="project-gradient">
-	<div class="section-container"></div>
+	<div class="section-projects"><div class="section-container"><Project/></div></div>
 </section>
 
 <section id="notice" class="notice-gradient">
-	<div class="section-container"></div>
+	<div class="section-container"><div class="w-[70-vh]"></div></div>
 </section>
 
 <section id="stack" class="stack-gradient">
@@ -35,6 +37,31 @@
 <style type="postcss">
 	.section-container {
 		@apply w-full max-w-7xl mx-auto p-4 py-16 md:py-24;
+	}
+
+	@media (min-width: 80rem) {
+		.section-projects {
+			@apply w-full;
+			position: relative;
+			background-size: cover;
+			background-position: center;
+		}
+		.section-projects::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 120%;
+			height: 100%;
+			background-image: url('/outerwilds.jpg');
+			background-size: cover;
+			background-position: center;
+			transform: translateX(-10%);
+			opacity: 0.5;
+			z-index: -1;
+			border-top-left-radius: 75% 50%;
+			border-top-right-radius: 75% 50%;
+		}
 	}
 
 	.hero-gradient {
