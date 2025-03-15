@@ -46,10 +46,11 @@
 		mix-blend-mode: lighten;
 		text-shadow: -5px -5px rgba(36, 106, 194, 0.7);
 
-		&:before {
+		&:after {
 			content: attr(data-text);
 			position: absolute;
 			top: 10px;
+			left: 0;
 			width: 100%;
 			text-shadow: 5px 5px rgba(207, 35, 114, 0.7);
 		}
