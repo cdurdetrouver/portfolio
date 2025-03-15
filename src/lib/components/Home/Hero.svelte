@@ -49,7 +49,7 @@
 		&:after {
 			content: attr(data-text);
 			position: absolute;
-			top: 10px;
+			top: 12.5%;
 			left: 0;
 			width: 100%;
 			text-shadow: 5px 5px rgba(207, 35, 114, 0.7);
