@@ -32,7 +32,7 @@
 <div class="space-y-4 md:space-y-10">
 	<div class="space-y-4 text-center">
 		<h2 class="h2">Projets</h2>
-		<ul class="grid grid-cols-2 grid-rows-2 gap-10">
+		<ul class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-10">
 			{#each projects as project}
 				<li
 					class="card card-hover aspect-video bg-cover bg-center bg-no-repeat"
