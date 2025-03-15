@@ -1,48 +1,49 @@
 <script lang="ts">
+	import Icon from "@iconify/svelte";
+
 	const features = [
 		{
 			title: 'Svelte',
-			body: 'Création de site internet avec Skeleton UI and tailwindcss.',
-			icon: 'fa-laptop-code'
-		},
-		{
-			title: 'C++',
-			body: 'Programmation orienté objet pour créer des apps performantes.',
-			icon: 'fa-universal-access'
-		},
-		{
-			title: 'Python',
-			body: `Faire de la dara science rapidement et efficacement.`,
-			icon: 'fa-square-arrow-up-right'
+			body: 'Développement d\'inteface web réactives et performantes.',
+			icon: 'skill-icons:svelte'
 		},
 		{
 			title: 'Typescript',
-			body: 'Pour utiliser avec Svelte en tant que backend ave honojs Deno.',
-			icon: 'fa-code'
+			body: 'Code robuste et maintenable avec typage statique.',
+			icon: 'skill-icons:typescript'
+		},
+		{
+			title: 'Python',
+			body: `Développement back-end, scripts et automatisation.`,
+			icon: 'skill-icons:python-dark'
+		},
+		{
+			title: 'Docker',
+			body: 'Conteneurisation et déploiement d\'applications.',
+			icon: 'skill-icons:docker'
 		},
 		{
 			title: 'Github',
-			body: `Création de repo avec pipeline CI/CD, branch ruleset etc...`,
-			icon: 'fa-puzzle-piece'
+			body: `Gestion de versions, collaboration et CI/CD.`,
+			icon: 'skill-icons:github-dark'
 		},
 		{
-			title: 'Mongodb',
-			body: 'Base de données nosql simple et performante.',
-			icon: 'fa-icons'
+			title: 'C++',
+			body: 'Programmation systèmes et optimisation des performances.',
+			icon: 'skill-icons:cpp'
 		}
 	];
 </script>
 
 <div class="space-y-4 md:space-y-10">
 	<div class="space-y-4 text-center">
-		<h2 class="h2">La liste de mes spécialités</h2>
-		<p>à voir.</p>
+		<h2 class="h2">Technos que j'utilise</h2>
 	</div>
 	<div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 		{#each features as feature}
 			<div class="card variant-glass p-4 shadow-lg md:p-10 space-y-4 text-center">
 				<span class="btn-icon btn-icon-xl variant-soft-primary">
-					<i class="fa-solid {feature.icon}"></i>
+					<Icon icon={feature.icon} width="32" height="32"/>
 				</span>
 				<h3 class="h3">{feature.title}</h3>
 				<p>{@html feature.body}</p>

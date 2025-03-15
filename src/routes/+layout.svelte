@@ -38,13 +38,7 @@
 			<svelte:fragment slot="lead">
 				<Logo />
 			</svelte:fragment>
-			<svelte:fragment slot="trail">
-				<div class="relative hidden lg:block">
-					<a class="btn hover:variant-soft-primary cursor-pointer" href="/freelance">
-						<span class="hidden select-none md:inline-block">Freelance</span>
-					</a>
-				</div>
-		
+			<svelte:fragment slot="trail">		
 				<div>
 					<a class="btn hover:variant-soft-primary cursor-pointer" href="/contact">
 						<span class="hidden select-none md:inline-block">Contact</span>

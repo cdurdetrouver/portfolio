@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<div class="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-10 items-center justify-center">
+<div class="grid grid-cols-1 xl:grid-cols-2 gap-4 md:gap-10">
 	<div class="flex flex-col items-center xl:items-start text-center xl:text-left space-y-4 mt-40">
 		<h1 class="h1 !text-5xl md:!text-6xl max-w-[600px]">
 			Hey! Je suis <span class="glitch-text uppercase" data-text="Gabriel">Gabriel</span> et je suis étudiant en computer science.
@@ -11,13 +11,13 @@
 		</p>
 		<div class="flex gap-4">
 			<a class="btn variant-filled text-xl" href="#about" rel="noreferrer">
-				Learn more about me
+				Voir mes projets
 			</a>
 		</div>
 	</div>
 	<div class="hidden md:inline-block w-full max-w-[650px] mx-auto mt-20">
 		<div class="aspect-video relative">
-			<div class="absolute z-[1] left-[23%]">
+			<div class="absolute w-full z-[1] flex items-center justify-center">
 				<div class="glitch-image">
 					<img src="gbazart.jpg" alt="profile picture" class="rounded-3xl w-[28vw] " aria-hidden="true" />
 					<img src="little-logo.png" alt="logo" class="block xl:hidden rounded-3xl w-[28vw] overlay-logo" aria-hidden="true" />

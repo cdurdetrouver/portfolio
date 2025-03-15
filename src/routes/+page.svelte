@@ -3,6 +3,8 @@
 	import Freelance from "$lib/components/Home/Freelance.svelte";
 	import Project from "$lib/components/Home/Project.svelte";
 	import Stack from "$lib/components/Home/Stack.svelte";
+	import About from "$lib/components/Home/About.svelte";
+	import Cv from "$lib/components/Home/CV.svelte";
 </script>
 
 <header id="hero" class="hero-gradient">
@@ -18,21 +20,17 @@
 	<div class="section-projects"><div class="section-container"><Project/></div></div>
 </section>
 
-<section id="notice" class="notice-gradient">
-	<div class="section-container"><div class="w-[70-vh]"></div></div>
-</section>
-
 <section id="stack" class="stack-gradient">
 	<div class="section-container"><Stack/></div>
 </section>
 
-<img class="w-[50vw]" src="yugo.gif" alt="test">
-<img class="w-[5vw]" src="stardew.gif" alt="test">
-<img class="w-[15vw]" src="saitama.gif" alt="test">
-<img class="w-[20vw] rounded-xl" src="outerwilds.jpg" alt="test">
-<img class="w-[20vw] rounded-xl" src="curry.png" alt="test">
-<img class="w-[20vw] rounded-xl" src="vitality.png" alt="test">
-<img src="https://media0.giphy.com/media/YRMb6dd7zprS00JdGZ/giphy.gif?cid=ecf05e47pp9oy2ivxoy3aif9mvewoex6jc5ywnem9njblkob&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="dev"/>
+<section id="about" class="about-gradient">
+	<div class="section-container"><About/></div>
+</section>
+
+<section id="cv" class="cv-gradient">
+	<div class="section-container"><Cv/></div>
+</section>
 
 <style type="postcss">
 	.section-container {
@@ -75,15 +73,21 @@
 			radial-gradient(at 0% 100%, rgba(var(--color-secondary-500) / 0.50) 0px, transparent 50%);
 	}
 
-	.notice-gradient {
+	.stack-gradient {
 		background-image:
 			radial-gradient(at 0% 0%, rgba(var(--color-secondary-500) / 0.50) 0px, transparent 50%),
 			radial-gradient(at 100% 100%,  rgba(var(--color-primary-500) / 0.24) 0px, transparent 50%);
 	}
 
-	.stack-gradient {
+	.about-gradient {
 		background-image:
 			radial-gradient(at 100% 0%,  rgba(var(--color-primary-500) / 0.24) 0px, transparent 50%),
 			radial-gradient(at 30% 100%,  rgba(var(--color-error-500) / 0.1) 0px, transparent 50%);
+	}
+
+	.cv-gradient {
+		background-image:
+		radial-gradient(at 30% 0%, rgba(var(--color-error-500) / 0.1) 0px, transparent 50%),
+		radial-gradient(at 70% 100%, rgba(var(--color-secondary-500) / 0.19) 0px, transparent 50%);
 	}
 </style>
