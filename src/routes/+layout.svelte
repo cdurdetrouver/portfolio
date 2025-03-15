@@ -24,11 +24,18 @@
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+
+	// Toast
+	import { initializeStores, Toast } from '@skeletonlabs/skeleton';
+
+	initializeStores();
 </script>
 
 <svelte:head>
-  <title>Portfolio Gabriel Bazart</title>
+	<title>Portfolio Gabriel Bazart</title>
 </svelte:head>
+
+<Toast />
 
 <!-- App Shell -->
 <AppShell>
@@ -38,10 +45,10 @@
 			<svelte:fragment slot="lead">
 				<Logo />
 			</svelte:fragment>
-			<svelte:fragment slot="trail">		
+			<svelte:fragment slot="trail">
 				<div>
 					<a class="btn hover:variant-soft-primary cursor-pointer" href="/contact">
-						<span class="hidden select-none md:inline-block">Contact</span>
+						<span class="select-none inline-block">Contact</span>
 					</a>
 				</div>
 			</svelte:fragment>
