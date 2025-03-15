@@ -1,0 +1,43 @@
+{
+	"name": "Portfolio Gabriel Bazart",
+	"short_name": "Portfolio",
+	"description": "Portfolio de Gabriel Bazart, présentant des projets et des compétences en développement web et en ingénierie logicielle.",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#000000",
+	"icons": [
+		{
+			"src": "/little-logo.png",
+			"sizes": "2885x2885",
+			"type": "image/png"
+		}
+	],
+	"lang": "fr",
+	"orientation": "portrait",
+	"scope": "/",
+	"screenshots": [
+		{
+			"src": "/projects/portfolio.png",
+			"sizes": "2560x1440",
+			"type": "image/png",
+			"label": "Accueil"
+		}
+	],
+	"shortcuts": [
+		{
+			"name": "Accueil",
+			"short_name": "Accueil",
+			"description": "Retourner à la page d'accueil",
+			"url": "/",
+			"icons": [{ "src": "/little-logo.png", "sizes": "2885x2885", "type": "image/png" }]
+		},
+		{
+			"name": "Contact",
+			"short_name": "Contact",
+			"description": "Contacter Gabriel Bazart",
+			"url": "/contact",
+			"icons": [{ "src": "/little-logo.png", "sizes": "2885x2885", "type": "image/png" }]
+		}
+	]
+}
