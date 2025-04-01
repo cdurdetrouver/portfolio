@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Icon from '@iconify/svelte';
 	import { getToastStore, type ToastSettings } from '@skeletonlabs/skeleton';
 	export let form;
 
@@ -27,16 +28,33 @@
 	<h1 class="h1 uppercase">Contactez-moi</h1>
 
 	<div class="text-center space-y-4">
-		<div class="flex flex-col md:flex-row items-center justify-center space-x-2">
-			<span class="text-2xl">📞</span>
-			<p class="text-lg font-semibold">Numéro de contact:</p>
-			<a class="text-lg" href="tel:+33784633275">+33 7 84 63 32 75</a>
-		</div>
-		<div class="flex  flex-col md:flex-row items-center justify-center space-x-2">
+		<a
+			class="text-lg flex flex-col md:flex-row items-center justify-center space-x-2"
+			href="https://discord.com/users/734497463171416154"
+			target="_blank"
+		>
+			<Icon icon="skill-icons:discord" />
+			<p class="font-semibold">Discord:</p>
+			<p>cdurdetrouver</p>
+		</a>
+
+		<a
+			class="text-lg flex flex-col md:flex-row items-center justify-center space-x-2"
+			href="https://www.linkedin.com/in/gabriel-bazart-87b3ab265/"
+			target="_blank"
+		>
+			<Icon icon="skill-icons:linkedin" />
+			<p class="font-semibold">Linkedin:</p>
+			<p>gabriel bazart</p>
+		</a>
+		<a
+			class="text-lg flex flex-col md:flex-row items-center justify-center space-x-2"
+			href="mailto:gabriel.bazart@gmail.com"
+		>
 			<span class="text-2xl">📧</span>
-			<p class="text-lg font-semibold">Adresse e-mail:</p>
-			<a class="text-lg" href="mailto:gabriel.bazart@gmail.com">gabriel.bazart@gmail.com</a>
-		</div>
+			<p class="font-semibold">Adresse e-mail:</p>
+			<p>gabriel.bazart@gmail.com</p>
+		</a>
 	</div>
 
 	<form class="w-full max-w-lg" method="POST">
