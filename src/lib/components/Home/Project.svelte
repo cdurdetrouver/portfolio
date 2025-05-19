@@ -3,10 +3,11 @@
 
 	let projects: Project[] = [
 		{
-			title: 'Portfolio',
-			description: 'Mon protfolio personnel, réalisé avec SvelteKit et TailwindCSS.',
-			link: 'https://www.cdurdetrouver.fr',
-			image: 'portfolio.png'
+			title: '42 EWC',
+			description:
+				"Site d'inscription pour un évènement e-sport de plus de 13 campus 42 en Europe.",
+			link: 'https://42ewc.cdurdetrouver.fr',
+			image: '42ewc.png'
 		},
 		{
 			title: 'Marty',
